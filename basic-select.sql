@@ -130,3 +130,12 @@ where CITY not regexp '^(a|e|i|o|u)'
 select distinct CITY
 from STATION
 where CITY not regexp '(a|e|i|o|u)$'
+
+
+-- Challenge 16: WeatherObservation Station 11
+-- https://www.hackerrank.com/challenges/weather-observation-station-11
+
+select distinct CITY
+from STATION
+where CITY not regexp '^(a|e|i|o|u)'
+or CITY not regexp '(a|e|i|o|u)$'
