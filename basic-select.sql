@@ -114,3 +114,11 @@ select distinct CITY
 from STATION
 where CITY regexp '^(a|e|i|o|u)'
 and CITY regexp '(a|e|i|o|u)$'
+
+
+-- Challenge 11: WeatherObservation Station 9
+-- https://www.hackerrank.com/challenges/weather-observation-station-9/problem
+
+select distinct CITY
+from STATION
+where CITY not regexp '^(a|e|i|o|u)'
