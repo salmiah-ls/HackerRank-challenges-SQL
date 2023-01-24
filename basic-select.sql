@@ -139,3 +139,38 @@ select distinct CITY
 from STATION
 where CITY not regexp '^(a|e|i|o|u)'
 or CITY not regexp '(a|e|i|o|u)$'
+
+
+-- Challenge 17: WeatherObservation Station 12
+-- https://www.hackerrank.com/challenges/weather-observation-station-12
+
+select distinct CITY
+from STATION
+where CITY not regexp '^(a|e|i|o|u)'
+and CITY not regexp '(a|e|i|o|u)$'
+
+
+-- Challenge 18: Higher Than 75 Marks
+-- https://www.hackerrank.com/challenges/more-than-75-marks/problem
+
+select Name
+from STUDENTS
+where Marks > 75
+order by substr(Name, -3), ID
+
+
+-- Challenge 19: Employee Names
+-- https://www.hackerrank.com/challenges/name-of-employees/problem
+
+SELECT name
+FROM Employee
+ORDER BY name
+
+
+-- Challenge 20: Employee Salaries
+-- https://www.hackerrank.com/challenges/salary-of-employees/problem
+
+SELECT name
+FROM Employee
+WHERE salary > 2000 and months < 10
+ORDER BY employee_id
