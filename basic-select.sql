@@ -53,7 +53,7 @@ SELECT CITY, STATE
 FROM STATION
 
 
--- Challenge 7: Weather Observation Station 3
+-- Challenge 8: Weather Observation Station 3
 -- https://www.hackerrank.com/challenges/weather-observation-station-3/problem
 
 SELECT DISTINCT CITY
@@ -61,14 +61,14 @@ FROM STATION
 WHERE MOD(ID, 2)=0
 
 
--- Challenge 8: Weather Observation Station 4
+-- Challenge 9: Weather Observation Station 4
 -- https://www.hackerrank.com/challenges/weather-observation-station-4/problem
 
 SELECT COUNT(CITY) - COUNT(DISTINCT(CITY))
 FROM STATION
 
 
--- Challenge 8: Weather Observation Station 5
+-- Challenge 10: Weather Observation Station 5
 -- https://www.hackerrank.com/challenges/weather-observation-station-5/problem
 
 SELECT CITY, CHAR_LENGTH(CITY)
@@ -87,7 +87,7 @@ WHERE CHAR_LENGTH(CITY) IN
 ORDER BY CITY;
 
 
--- Challenge 8: Weather Observation Station 6
+-- Challenge 11: Weather Observation Station 6
 -- https://www.hackerrank.com/challenges/weather-observation-station-6/problem
 
 select DISTINCT(CITY)
@@ -99,7 +99,7 @@ or CITY LIKE 'O%'
 or CITY LIKE 'U%'
 
 
--- Challenge 9: WeatherObservation Station 7
+-- Challenge 12: WeatherObservation Station 7
 -- https://www.hackerrank.com/challenges/weather-observation-station-7/problem
 
 select DISTINCT CITY
@@ -107,7 +107,7 @@ from STATION
 where CITY regexp '(a|e|i|o|u)$'
 
 
--- Challenge 10: WeatherObservation Station 8
+-- Challenge 13: WeatherObservation Station 8
 -- https://www.hackerrank.com/challenges/weather-observation-station-8/problem
 
 select distinct CITY
@@ -116,9 +116,17 @@ where CITY regexp '^(a|e|i|o|u)'
 and CITY regexp '(a|e|i|o|u)$'
 
 
--- Challenge 11: WeatherObservation Station 9
+-- Challenge 14: WeatherObservation Station 9
 -- https://www.hackerrank.com/challenges/weather-observation-station-9/problem
 
 select distinct CITY
 from STATION
 where CITY not regexp '^(a|e|i|o|u)'
+
+
+-- Challenge 15: WeatherObservation Station 10
+-- https://www.hackerrank.com/challenges/weather-observation-station-10/problem
+
+select distinct CITY
+from STATION
+where CITY not regexp '(a|e|i|o|u)$'
