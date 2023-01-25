@@ -1,5 +1,3 @@
--- This code is for MySQL database.
-
 -- Challenge 1: Revising the Select Query I
 -- https://www.hackerrank.com/challenges/revising-the-select-query/problem
 
