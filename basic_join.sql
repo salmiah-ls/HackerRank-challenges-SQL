@@ -21,7 +21,12 @@ and CONTINENT = 'Africa'
 -- Challenge 3: Average Population of Each Continent
 -- https://www.hackerrank.com/challenges/average-population-of-each-continent/problem
 
-select COUNTRY.CONTINENT, ROUND(AVG(CITY.POPULATION), 0)
+select COUNTRY.CONTINENT, FLOOR(AVG(CITY.POPULATION))
 from COUNTRY
 inner join CITY on COUNTRY.CODE = CITY.COUNTRYCODE
 group by COUNTRY.CONTINENT
+
+
+-- Challenge 4: The Report
+-- https://www.hackerrank.com/challenges/the-report/problem
+
