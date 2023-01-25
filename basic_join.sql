@@ -30,3 +30,7 @@ group by COUNTRY.CONTINENT
 -- Challenge 4: The Report
 -- https://www.hackerrank.com/challenges/the-report/problem
 
+SELECT IF(Grade>=8, Name, "NULL"), Grade, Marks
+FROM Students
+INNER JOIN Grades ON Marks >= Min_Mark and Marks <= Max_Mark
+ORDER BY Grade DESC, Name ASC
